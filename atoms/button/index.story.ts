@@ -1,7 +1,7 @@
-import Button, {ButtonProps} from './index'
+import button, {Props} from './index'
 import { Meta, StoryFn } from '@storybook/html';
 
-export const Primary: StoryFn<ButtonProps> = Button.bind({})
+export const Primary: StoryFn<Props> = button.bind({})
 Primary.args = {
   disabled: false,
   text: 'Click Me',

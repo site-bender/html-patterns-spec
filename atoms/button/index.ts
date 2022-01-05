@@ -1,11 +1,11 @@
 import {html} from 'uhtml'
 
-export type ButtonProps = {
+export type Props = {
     disabled: boolean,
     text: string
 }
 
-export default function Button({disabled, text}: ButtonProps) {
+export default function button({disabled, text}: Props) {
   const log = () => console.log('Clicked')
 
   return html.node`
