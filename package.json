@@ -1,0 +1,14 @@
+{
+  "name": "@sitebender/html-patterns-spec",
+  "version": "0.0.1",
+  "description": "Example HTML/CSS/JS output patterns for the components' library (a specification).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/site-bender/html-patterns-spec.git"
+  },
+  "license": "MIT",
+  "author": "Charles F. Munat <charles.munat@gmail.com>",
+  "scripts": {
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix"
+  }
+}
