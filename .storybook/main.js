@@ -1,6 +1,8 @@
 module.exports = {
   "stories": [
-    "../atoms/**/*.story.@(js|jsx|ts|tsx)",
+    "../atoms/**/*.story.ts",
+    "../compounds/**/*.story.ts",
+    "../molecules/**/*.story.ts"
   ],
   "addons": [
     "@storybook/addon-links",
@@ -8,6 +10,6 @@ module.exports = {
   ],
   "framework": "@storybook/html",
   "core": {
-    "builder": "webpack5"
+    "builder": "storybook-builder-vite"
   }
 }
