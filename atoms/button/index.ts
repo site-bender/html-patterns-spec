@@ -1,4 +1,4 @@
-import { html } from 'uhtml'
+import html from '../../uhtml.config'
 
 export type Props = {
   disabled: boolean
@@ -8,8 +8,8 @@ export type Props = {
 export default function button({ disabled, text }: Props) {
   const log = () => console.log('Clicked')
 
-  return html.node`
-    <button .disabled=${disabled} class="clickable" onclick=${log} >
+  return html`
+    <button disabled=${disabled || undefined} class="clickable" onclick=${log}>
       ${text}
     </button>
   `

@@ -1,5 +1,5 @@
-import button, { Props } from './index'
 import { Meta, StoryFn } from '@storybook/html'
+import button, { Props } from './index'
 
 export const Primary: StoryFn<Props> = button.bind({})
 Primary.args = {
