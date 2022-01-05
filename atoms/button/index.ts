@@ -10,9 +10,9 @@ export default function button({disabled, text}: Props) {
 
   return html.node`
     <button
-            .disabled="${disabled}"
+            .disabled=${disabled}
             class="clickable"
-            onclick="${log}"
+            onclick=${log}
     >
         ${text}
     </button>
