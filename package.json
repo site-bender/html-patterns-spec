@@ -15,7 +15,9 @@
     "--- PRODUCTION ---": "this is a divider",
     "build:storybook": "build-storybook",
     "--- CI/CD ---": "this is a divider",
-    "lint:fix": "eslint . --ignore-path .gitignore --ext .js,.ts --fix"
+    "lint:fix": "eslint . --ignore-path .gitignore --ext .js,.ts --fix",
+    "prettier:check": "prettier --ignore-path .gitignore --check '**/*.{js,ts,css,html}'",
+    "prettier:fix": "prettier --ignore-path .gitignore --write '**/*.{js,ts,css,html}'"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
@@ -38,6 +40,7 @@
     "vite": "^2.7.10"
   },
   "dependencies": {
+    "prettier": "^2.5.1",
     "uhtml": "^2.8.0"
   }
 }

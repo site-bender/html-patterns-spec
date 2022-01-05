@@ -1,5 +1,5 @@
-import button, {Props} from './index'
-import { Meta, StoryFn } from '@storybook/html';
+import button, { Props } from './index'
+import { Meta, StoryFn } from '@storybook/html'
 
 export const Primary: StoryFn<Props> = button.bind({})
 Primary.args = {
@@ -7,7 +7,7 @@ Primary.args = {
   text: 'Click Me',
 }
 
-const meta: Meta =  {
+const meta: Meta = {
   title: 'button',
 }
 
