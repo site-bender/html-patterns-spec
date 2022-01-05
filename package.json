@@ -9,12 +9,12 @@
   "license": "MIT",
   "author": "Charles F. Munat <charles.munat@gmail.com>",
   "scripts": {
-    "--- DEVELOPMENT ---": "this is a divider",
+    "__DEVELOPMENT__": "this is a divider",
     "storybook": "start-storybook -p 6006",
-    "--- TEST ---": "this is a divider",
-    "--- PRODUCTION ---": "this is a divider",
+    "__TEST__": "this is a divider",
+    "__PRODUCTION__": "this is a divider",
     "build:storybook": "build-storybook",
-    "--- CI/CD ---": "this is a divider",
+    "__CI/CD__": "this is a divider",
     "lint:fix": "eslint . --ignore-path .gitignore --ext .js,.ts --fix",
     "prettier:check": "prettier --ignore-path .gitignore --check '**/*.{js,ts,css,html}'",
     "prettier:fix": "prettier --ignore-path .gitignore --write '**/*.{js,ts,css,html}'"
