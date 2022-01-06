@@ -1,15 +1,15 @@
-import { Meta, StoryFn } from "@storybook/html";
-import Button, { Props } from "./index";
+import { Meta, StoryFn } from "@storybook/html"
+import Button, { Props } from "./index"
 
-export const Primary: StoryFn<Props> = Button.bind({});
+export const Primary: StoryFn<Props> = Button.bind({})
 
 Primary.args = {
 	disabled: false,
-	text: "Click Me"
-};
+	text: "Click Me",
+}
 
 const meta: Meta = {
-	title: "Button"
-};
+	title: "Button",
+}
 
-export default meta;
+export default meta

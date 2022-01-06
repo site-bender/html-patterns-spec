@@ -4,6 +4,14 @@
 	"bracketSpacing": true,
 	"endOfLine": "lf",
 	"jsxSingleQuote": false,
+	"overrides": [
+		{
+			"files": "*.html",
+			"options": {
+				"parser":"html"
+			}
+		}
+	],
 	"parser": "typescript",
 	"printWidth": 80,
 	"proseWrap": "always",

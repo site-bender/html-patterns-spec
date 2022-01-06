@@ -1,4 +1,4 @@
-import html from "../../uhtml.config";
+import html from "../../uhtml.config"
 
 export type Props = {
 	disabled: boolean
@@ -6,11 +6,15 @@ export type Props = {
 }
 
 export default function Button({ disabled, text }: Props) {
-	const log = () => console.log("Clicked");
+	const log = () => console.log("Clicked")
 
 	return html`
-		<button disabled="${disabled || undefined}" class="clickable" onclick=${log}>
+		<button
+			class="clickable"
+			disabled="${disabled || undefined}"
+			onclick=${log}
+		>
 			${text}
 		</button>
-	`;
+	`
 }

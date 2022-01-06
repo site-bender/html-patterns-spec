@@ -4,7 +4,7 @@ module.exports = {
 		commonjs: true,
 		es2020: true,
 		node: true,
-		jest: true
+		jest: true,
 	},
 	parser: "@typescript-eslint/parser",
 	extends: [
@@ -13,39 +13,39 @@ module.exports = {
 		"plugin:import/errors",
 		"plugin:import/warnings",
 		"plugin:import/typescript",
-		"prettier"
+		"prettier",
 	],
 	globals: {
 		Atomics: "readonly",
-		SharedArrayBuffer: "readonly"
+		SharedArrayBuffer: "readonly",
 	},
 	parserOptions: {
 		ecmaVersion: 2020,
-		sourceType: "module"
+		sourceType: "module",
 	},
 	settings: {
 		"import/resolver": {
-			typescript: {}
-		}
+			typescript: {},
+		},
 	},
 	plugins: [
 		"@typescript-eslint",
 		"sort-destructure-keys",
 		"sort-imports-es6-autofix",
-		"import"
+		"import",
 	],
 	rules: {
 		"sort-destructure-keys/sort-destructure-keys": [
 			"warn",
-			{ caseSensitive: false }
+			{ caseSensitive: false },
 		],
 		"sort-imports-es6-autofix/sort-imports-es6": [
 			"warn",
 			{
-				ignoreCase: false
+				ignoreCase: false,
 				// ignoreMemberSort: false,
 				// memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-			}
-		]
-	}
-};
+			},
+		],
+	},
+}

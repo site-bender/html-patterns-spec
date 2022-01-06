@@ -1,105 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			Abbreviation :: Atoms :: Sitebender HTML pattern specification
+		</title>
+		<style media="screen,print">
+			body {
+				align-items: flex-start;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-top;
+				padding: 2rem;
+			}
 
-<head>
-	<meta charset="UTF-8" />
-	<link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Abbreviation :: Atoms :: Sitebender HTML pattern specification</title>
-	<style media="screen,print">
-		body {
-			align-items: flex-start;
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-top;
-			padding: 2rem;
-		}
+			abbr {
+				background-color: var(--abbreviation-background-color, inherit);
+				border-top-color: var(--abbreviation-border-top-color, none);
+				border-top-style: var(--abbreviation-border-top-style, none);
+				border-top-width: var(--abbreviation-border-top-width, none);
+				border-right-color: var(--abbreviation-border-right-color, none);
+				border-right-style: var(--abbreviation-border-right-style, none);
+				border-right-width: var(--abbreviation-border-right-width, none);
+				border-bottom-color: var(--abbreviation-border-bottom-color, black);
+				border-bottom-style: var(--abbreviation-border-bottom-style, dotted);
+				border-bottom-width: var(--abbreviation-border-bottom-width, 1px);
+				border-left-color: var(--abbreviation-border-left-color, none);
+				border-left-style: var(--abbreviation-border-left-style, none);
+				border-left-width: var(--abbreviation-border-left-width, none);
+				color: var(--abbreviation-color, black);
+				display: var(--abbreviation-display, inline);
+				font-size: var(
+					--abbreviation-font-size,
+					var(--default-font-size, 1rem)
+				);
+				margin-top: var(--abbreviation-margin-top, 0);
+				margin-right: var(--abbreviation-margin-right, 0);
+				margin-bottom: var(--abbreviation-margin-bottom, 0);
+				margin-left: var(--abbreviation-margin-left, 0);
+				padding-top: var(--abbreviation-padding-top, 0);
+				padding-right: var(--abbreviation-padding-right, 0);
+				padding-bottom: var(--abbreviation-padding-bottom, 0);
+				padding-left: var(--abbreviation-padding-left, 0);
+				text-decoration: var(--abbreviation-text-decoration, none);
+				/* more to come */
+			}
 
-		abbr {
-			background-color: var(--abbreviation-background-color, inherit);
-			border-top-color: var(--abbreviation-border-top-color, none);
-			border-top-style: var(--abbreviation-border-top-style, none);
-			border-top-width: var(--abbreviation-border-top-width, none);
-			border-right-color: var(--abbreviation-border-right-color, none);
-			border-right-style: var(--abbreviation-border-right-style, none);
-			border-right-width: var(--abbreviation-border-right-width, none);
-			border-bottom-color: var(--abbreviation-border-bottom-color, black);
-			border-bottom-style: var(--abbreviation-border-bottom-style, dotted);
-			border-bottom-width: var(--abbreviation-border-bottom-width, 1px);
-			border-left-color: var(--abbreviation-border-left-color, none);
-			border-left-style: var(--abbreviation-border-left-style, none);
-			border-left-width: var(--abbreviation-border-left-width, none);
-			color: var(--abbreviation-color, black);
-			display: var(--abbreviation-display, inline);
-			font-size: var(--abbreviation-font-size, var(--default-font-size, 1rem));
-			margin-top: var(--abbreviation-margin-top, 0);
-			margin-right: var(--abbreviation-margin-right, 0);
-			margin-bottom: var(--abbreviation-margin-bottom, 0);
-			margin-left: var(--abbreviation-margin-left, 0);
-			padding-top: var(--abbreviation-padding-top, 0);
-			padding-right: var(--abbreviation-padding-right, 0);
-			padding-bottom: var(--abbreviation-padding-bottom, 0);
-			padding-left: var(--abbreviation-padding-left, 0);
-			text-decoration: var(--abbreviation-text-decoration, none);
-			/* more to come */
-		}
+			dfn {
+			}
 
-		dfn {}
+			a {
+				color: var(--abbreviation-link-color, blue);
+				text-decoration: var(--abbreviation-link-text-decoration, none);
+			}
+		</style>
+	</head>
 
-		a {
-			color: var(--abbreviation-link-color, blue);
-			text-decoration: var(--abbreviation-link-text-decoration, none);
-		}
-
-	</style>
-</head>
-
-<body>
-	<h1><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr">Abbreviation</a></h1>
-	<a href="../">[ back ]</a>
-	<h2>Minimum</h2>
-	<p>
-		<abbr title="{ expansion }">{ abbreviation }</abbr>
-	</p>
-	<h2>Full</h2>
-	<p>
-		<!-- See ./types.d.ts -->
-		<abbr autocapitalize="words" autofocus class="class" contenteditable="true" dir="rtl" draggable="true"
-			id="unique-id" inputmode="text" lang="en-US" spellcheck="true" tabindex="0" title="{ expansion }" translate="no">{
-			abbreviation
-			}</abbr>
-	</p>
-	<h2>Examples</h2>
-	<ul>
-		<li><abbr title="Culinary Institute of America">CIA</abbr></li>
-		<li><abbr title="Food Borne Illness">FBI</abbr></li>
-		<li><abbr title="No Sugar Added">NSA</abbr></li>
-		<li>
-			<dfn id="html">
-				<abbr title="HyperText Markup Language">HTML</abbr>
-			</dfn> is a markup language used to create the semantics and structure
-			of a web page.
-		</li>
-		<li>
-			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" rel="help">
+	<body>
+		<h1>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr"
+				>Abbreviation</a
+			>
+		</h1>
+		<a href="../">[ back ]</a>
+		<h2>Minimum</h2>
+		<p>
+			<abbr title="{ expansion }">{ abbreviation }</abbr>
+		</p>
+		<h2>Full</h2>
+		<p>
+			<!-- See ./types.d.ts -->
+			<abbr
+				autocapitalize="words"
+				autofocus
+				class="class"
+				contenteditable="true"
+				dir="rtl"
+				draggable="true"
+				id="unique-id"
+				inputmode="text"
+				lang="en-US"
+				spellcheck="true"
+				tabindex="0"
+				title="{ expansion }"
+				translate="no"
+				>{ abbreviation }</abbr
+			>
+		</p>
+		<h2>Examples</h2>
+		<ul>
+			<li><abbr title="Culinary Institute of America">CIA</abbr></li>
+			<li><abbr title="Food Borne Illness">FBI</abbr></li>
+			<li><abbr title="No Sugar Added">NSA</abbr></li>
+			<li>
 				<dfn id="html">
 					<abbr title="HyperText Markup Language">HTML</abbr>
-				</dfn></a> is a markup language used to create the semantics and structure
-			of a web page.
-		</li>
-	</ul>
-	<!-- Notes: abbr can contain string or phrasing content -->
-	<!-- dfn can contain phrasing content except another dfn, but here we will permit only abbr -->
-	<!-- a can have any content except interactive content or an element with a tabindex attribute, but here we will permit only dfn or abbr -->
-	<!-- what should the proper order of wrapping be? -->
-	<!-- See also: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#abbreviations -->
-	<!--
+				</dfn>
+				is a markup language used to create the semantics and structure of a web
+				page.
+			</li>
+			<li>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" rel="help">
+					<dfn id="html">
+						<abbr title="HyperText Markup Language">HTML</abbr>
+					</dfn></a
+				>
+				is a markup language used to create the semantics and structure of a web
+				page.
+			</li>
+		</ul>
+		<!-- Notes: abbr can contain string or phrasing content -->
+		<!-- dfn can contain phrasing content except another dfn, but here we will permit only abbr -->
+		<!-- a can have any content except interactive content or an element with a tabindex attribute, but here we will permit only dfn or abbr -->
+		<!-- what should the proper order of wrapping be? -->
+		<!-- See also: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#abbreviations -->
+		<!--
 		Phrasing content:
 		abbr, audio, b, bdo, br, button, canvas, cite, code, command, data, datalist, dfn, em, embed,
 		i, iframe, img, input, kbd, keygen, label, mark, math, meter, noscript, object, output, picture,
 		progress, q, ruby, samp, script, select, small, span, strong, sub, sup, svg, textarea, time,
 		u, var, video, wbr 
 	-->
-</body>
-
+	</body>
 </html>
