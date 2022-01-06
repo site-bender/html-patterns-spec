@@ -7,7 +7,6 @@
 /coverage
 
 # production
-/dist
 /secrets
 
 # misc
