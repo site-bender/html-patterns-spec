@@ -1,46 +1,46 @@
 {
-  "name": "@sitebender/html-patterns-spec",
-  "version": "0.0.1",
-  "description": "Example HTML/CSS/JS output patterns for the components' library (a specification).",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/site-bender/html-patterns-spec.git"
-  },
-  "license": "MIT",
-  "author": "Charles F. Munat <charles.munat@gmail.com>",
-  "scripts": {
-    "__DEVELOPMENT__": "this is a divider",
-    "storybook": "start-storybook -p 6006",
-    "__TEST__": "this is a divider",
-    "__PRODUCTION__": "this is a divider",
-    "build:storybook": "build-storybook",
-    "__CI/CD__": "this is a divider",
-    "lint:fix": "eslint . --ignore-path .gitignore --ext .js,.ts --fix",
-    "prettier:check": "prettier --ignore-path .gitignore --check '**/*.{js,ts,css,html}'",
-    "prettier:fix": "prettier --ignore-path .gitignore --write '**/*.{js,ts,css,html}'"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@storybook/addon-actions": "^6.5.0-alpha.7",
-    "@storybook/addon-essentials": "^6.5.0-alpha.7",
-    "@storybook/addon-links": "^6.5.0-alpha.7",
-    "@storybook/html": "^6.5.0-alpha.7",
-    "@typescript-eslint/eslint-plugin": "^5.9.0",
-    "@typescript-eslint/parser": "^5.9.0",
-    "babel-loader": "^8.2.3",
-    "eslint": "^8.6.0",
-    "eslint-config-next": "^12.0.7",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-import-resolver-typescript": "^2.5.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-sort-destructure-keys": "^1.4.0",
-    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
-    "prettier": "^2.5.1",
-    "storybook-builder-vite": "^0.1.13",
-    "typescript": "^4.4.4",
-    "vite": "^2.7.10"
-  },
-  "dependencies": {
-    "uhtml": "^2.8.0"
-  }
+	"name": "@sitebender/html-patterns-spec",
+	"version": "0.0.1",
+	"description": "Example HTML/CSS/JS output patterns for the components' library (a specification).",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/site-bender/html-patterns-spec.git"
+	},
+	"license": "MIT",
+	"author": "Charles F. Munat <charles.munat@gmail.com>",
+	"scripts": {
+		"__DEVELOPMENT__": "this is a divider",
+		"storybook": "start-storybook -p 6006",
+		"__TEST__": "this is a divider",
+		"__PRODUCTION__": "this is a divider",
+		"build:storybook": "build-storybook",
+		"__CI/CD__": "this is a divider",
+		"lint:fix": "eslint . --ignore-path .gitignore --ext .js,.ts --fix",
+		"prettier:check": "prettier --ignore-path .gitignore --check '**/*.{js,ts,css,html}'",
+		"prettier:fix": "prettier --ignore-path .gitignore --write '**/*.{js,ts,css,html}'"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.16.7",
+		"@storybook/addon-actions": "^6.5.0-alpha.7",
+		"@storybook/addon-essentials": "^6.5.0-alpha.7",
+		"@storybook/addon-links": "^6.5.0-alpha.7",
+		"@storybook/html": "^6.5.0-alpha.7",
+		"@typescript-eslint/eslint-plugin": "^5.9.0",
+		"@typescript-eslint/parser": "^5.9.0",
+		"babel-loader": "^8.2.3",
+		"eslint": "^8.6.0",
+		"eslint-config-next": "^12.0.7",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-import-resolver-typescript": "^2.5.0",
+		"eslint-plugin-import": "^2.25.4",
+		"eslint-plugin-sort-destructure-keys": "^1.4.0",
+		"eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+		"prettier": "^2.5.1",
+		"storybook-builder-vite": "^0.1.13",
+		"typescript": "^4.4.4",
+		"vite": "^2.7.10"
+	},
+	"dependencies": {
+		"uhtml": "^2.8.0"
+	}
 }
