@@ -5,7 +5,7 @@ export type Props = {
     text: string
 }
 
-export default function button({disabled, text}: Props) {
+export default function Button({disabled, text}: Props) {
   const log = () => console.log('Clicked')
 
   return html.node`
